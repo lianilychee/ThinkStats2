@@ -16,10 +16,33 @@ import sys
 import nsfg
 import thinkstats2
 
-def ReadFile(dct_file='2002FemPreg.dct',
-			 dat='2002FemPreg.dat.gz'):
+def readFile(dct_file='2002FemResp.dct',
+			 dat_file='2002FemResp.dat.gz'):
 	""" Read NSFG pregnancy data.
 	"""
+	dct = thinkstats2.ReadStataDct(dct_file)
+	df = dct.ReadFixedWidth(dat_file, compression='gzip')
+	# CleanFemResp(df)
+	return df
+
+
+def checkPregnum(resp):
+	# get pregnancy frame
+	preg = nsfg.ReadFemPreg()
+
+	# create map
+	pregMap = nsfg.MakePregMap(preg)
+
+	for index, pregnum in resp.pregnum.iteritems():
+		caseid = resp.caseid[index]
+		indices = pregMap[caseid]
+
+		# check that pregnum from resp file = number of records in preg file
+		if len(indices) != pregnum:
+			print (caseid, len(indices), pregnum)
+			return False
+
+	return True
 
 
 def main(script):
@@ -27,6 +50,13 @@ def main(script):
 
     script: string script name
     """
+
+    resp = readFile()
+
+    assert(len(resp) == 7643)
+    assert(resp.pregnum.value_counts()[1] == 1267)
+    assert(checkPregnum(resp))
+
     print('%s: All tests passed.' % script)
 
 
