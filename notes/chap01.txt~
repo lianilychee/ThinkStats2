@@ -1,0 +1,33 @@
+'''
+Think Stats Chapter 01 Reading Questions
+Liani Lye
+01.21.14
+'''
+
+Study design: what's the difference between:
+
+1) Observational vs. experimental
+
+Observational: just observing; no treatment.  Experimental: controlled; think "intervention," i.e. giving a group a drug vs a control.
+
+Same as anecdotal versus experimental.  The former is based on "as-it-happens" incidents, and in conversation, are more likely to yield similar responses.  Experimentally obtained data is obtained under very tightly controlled environments to prevent the biases of anecdotal evidence.
+
+2) Cross-sectional vs. longitudinal
+
+The former captures information about a certain group of people at a certain point in time.  The latter follows a group of people over a period of time - think a series of cross-sectionals.
+
+3) Representative vs. oversampled
+
+Cross-sectional studies are meant to be representative, meaning every member of the target population has an equal chance of participating.  Oversampling, however, occurs when the target population is sampled at a higher-than-real-life rate.  Example: Olin's diversity in student body study focuses on 10 Asians and 10 whites (50:50), while only 20% of Olin's student body is Asian.
+
+4) Raw data vs. recodes
+
+Recodes are variables calculated from raw data.
+
+5) What's an example of something you might do during data cleaning?
+
+Data cleaning involves checking for errors, dealing with special values, converting data into different formats, and performing calculations.
+
+6) What's an example of something you might do during data validation?
+
+Data validation - one option: computing basic stats and comparing with published results.  This will expose any computation / interpretation errors.

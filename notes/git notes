@@ -1,0 +1,4 @@
+To sync forked repo from origin,
+
+$ git checkout master
+$ git pull upstream/master master
