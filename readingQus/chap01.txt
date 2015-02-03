@@ -8,7 +8,7 @@ Study design: what's the difference between:
 
 1) Observational vs. experimental
 
-Same as anecdotal versus experimental.  The former is based on "as-it-happens" incidents, and in conversation, are more likely to yield similar responses.  Experimentally obtained data is obtained under very tightly controlled environments to prevent the biases of anecdotal evidence.
+Observational: just observing; no treatment.  Experimental: controlled; think "intervention," i.e. giving a group a drug vs a control.  Anecdotal: "As-it-happens" incidents, and in conversation, are more likely to yield similar responses.  Experimentally obtained data is obtained under very tightly controlled environments to prevent the biases of anecdotal evidence.
 
 2) Cross-sectional vs. longitudinal
 
