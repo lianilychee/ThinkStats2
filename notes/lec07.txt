@@ -1,0 +1,40 @@
+'''
+Lecture 07 In-class Questions
+Liani Lye
+02.10.15
+'''
+
+THINKSTATS2 <http://greenteapress.com/thinkstats2/thinkstats2.html>
+
+a) What are the attributes of a Cdf?
+
+The Cdf class has these attributes:
+xs, which is the sequence of values
+ps, which is the sequence of probabilities
+name, which is the graph label
+
+
+b) What methods modify a Cdf?
+
+Cdf can be modified with:
+.Append
+.Copy .CredibleInterval
+.Items 
+.MakePmf .Max .Mean 
+.Percentile .Prob 
+.Random .Render 
+.Sample .Scale .Shift
+
+Don't get confused:
+.Value - returns InverseCDF
+.Values - sorts the list
+
+
+c) How do you iterate through the values and probabilities in a Cdf?
+
+
+
+
+d) How do you iterate through the values and frequencies in a Hist?
+
+e) What methods modify Pmfs and Hists?
